@@ -1,0 +1,16 @@
+// Initialize a string with "" else the output is undefinedabcabcabc
+
+
+function repeatStringNumTimes(str, num) {
+  
+  var repeatedString = "";
+  
+  for(var i = 0; i < num; i++) {
+    repeatedString = repeatedString + str;
+  }
+  
+   
+  return repeatedString;
+}
+
+repeatStringNumTimes("abc", 3);
