@@ -1,0 +1,16 @@
+
+function bouncer(arr) {
+  
+  function filterFalse(arrayElement) {
+    
+    if (arrayElement) {
+      return arrayElement;
+    }
+  }
+  
+  var newArray = arr.filter(filterFalse);
+  
+  return newArray;
+}
+
+bouncer([7, "ate", "", false, 9]);
