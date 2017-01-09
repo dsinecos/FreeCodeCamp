@@ -1,0 +1,18 @@
+function slasher(arr, howMany) {
+  
+  function satisfiesLength(arrayElement, arrayIndex) {
+    if (arrayIndex < howMany) {
+      return;
+    } else {
+      return arrayElement;
+    }
+    
+  }
+  
+  var returnArray = arr.filter(satisfiesLength);
+  
+  return returnArray;
+  
+}
+
+slasher([1, 2, 3], 2);
