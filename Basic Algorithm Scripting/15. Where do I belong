@@ -1,0 +1,21 @@
+function getIndexToIns(arr, num) {
+  // Create an array from the arguments
+  var args = Array.from(arguments);
+  
+  // This part is to flatten the array created from the arguments
+  function mergeObjects(arg1, arg2) {
+      return arg1.concat(arg2);
+  }
+  var flattenedArgs = args.reduce(mergeObjects);
+  
+  // This part is to sort the flattened array
+  function compare(a, b) {
+      return a-b;
+  }  
+  flattenedArgs.sort(compare);
+   
+  // This part returns the smallest index of the number that has to be inserted into the sorted index 
+  return flattenedArgs.indexOf(num);  
+}
+
+getIndexToIns([3, 10, 5], 3);
