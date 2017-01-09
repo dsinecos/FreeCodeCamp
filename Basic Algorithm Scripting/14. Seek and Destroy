@@ -1,0 +1,23 @@
+function destroyer(arr) {
+  // Skeleton for the program
+  
+  //Convert the set of arguments into an array
+  
+  args = Array.from(arguments);
+  args.shift(0);
+  console.log(args);
+  
+  function filterObjects(arrayElement) {
+    
+    //Use the earlier array of arguments to crosscheck a value against
+    
+    return !args.includes(arrayElement);
+    
+  }
+  
+  var newArray = arr.filter(filterObjects);
+  return newArray;
+  
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
