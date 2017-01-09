@@ -1,0 +1,57 @@
+
+// Rough work to understand the different functions to be used in the program
+
+/*
+function getUnicode(arrayElement) {
+    return arrayElement.charCodeAt(0);
+}
+
+var str = "A Z";
+
+var newArray = Array.from(str);
+var newArrayUnicode = newArray.map(getUnicode);
+
+var str2 = newArray.join("");
+
+
+console.log(newArray);
+console.log(newArrayUnicode);
+console.log(str2);
+
+*/
+
+// How to keep non-alphabetic characters as it is? - Any character with unicode outside the range 65-90 will be returned without modification
+
+/* Steps
+1. Break the given string into an array
+2. Use map to shift the alphabets by 13 places
+3. Join the resulting array and return the string
+*/
+
+function rot13(str) {
+    function decrypt(arrayElement) {
+        
+        // The if statement is to ensure that the non-alphabetic characters are returned without modification
+        
+        if (arrayElement.charCodeAt(0) >= 65 & arrayElement.charCodeAt(0) <= 90) {
+          // Replace the following if-else using modular function
+            
+            if ((arrayElement.charCodeAt(0) - 13) >= 65) {
+                return String.fromCharCode(arrayElement.charCodeAt(0) - 13);
+            } else {
+                return String.fromCharCode((arrayElement.charCodeAt(0) % 65 - 12 + 90));
+            }     
+        } else {
+            return arrayElement;
+        }
+    }
+    
+    var array = Array.from(str);
+    var decryptedArray = array.map(decrypt);
+    var decryptedString = decryptedArray.join("");
+    
+    return decryptedString;    
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
