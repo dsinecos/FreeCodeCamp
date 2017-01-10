@@ -1,0 +1,61 @@
+Prepared on Codepen's interface
+
+HTML
+
+<div class="container-fluid">
+  <h2> Eric Theodore Cartman </h2>
+  <p> Cartman is an elementary school student who lives with his mother in the fictional town of South Park, Colorado, where he routinely has extraordinary experiences atypical of a small town </p>
+  <div class="row">
+    <div class="cartmanFriends col-xs-6">
+      <p> Cartman's friends </p>
+      <ul>
+        <li> Butter Stotch </li>
+        <li> Kenny McCormick</li>
+        <li> Stan Marsh</li>
+        <li> Kyle Broflovski </li>
+      </ul>
+    </div>
+    <div class="col-xs-6 cartmanFriends">
+      <p> Cartman's personality </p>
+      <ol>
+        <li> Aggressive </li>
+        <li> Prejudiced </li>
+        <li> Arrogant </li>
+        <li> Narcissistic </li>
+      </ol>
+    </div>
+  </div>
+  
+  <figure class="figure">
+    <a href="https://en.wikipedia.org/wiki/Butters_Stotch"><img src = "https://pbs.twimg.com/profile_images/2922023039/e43a2ab783ca385dc725156d431972a6_400x400.png" alt = "Butters Stotch" class="img-responsive figure-img img-fluid rounded" id="buttersStotch"></a>
+    <figcaption class="figure-caption text-center"> <strong>Butters Stotch, 1969</strong> </figcaption>
+  </figure>
+</div>
+
+CSS
+
+body {
+  background: #893;
+  font-style: arial;
+}
+
+h2 {
+  font-color: red;
+  font-family: Monospace;
+  font-size: 40px;
+  background-color: #ff8;
+  display: block;
+}
+
+p {
+  font-size: 18px
+}
+
+.cartmanFriends {
+  font-family: verdana;
+  font-size: 15px;
+}
+
+#buttersStotch {
+  padding: 5%;
+}
