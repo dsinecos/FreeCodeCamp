@@ -3,22 +3,167 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daily Review</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Review</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
 
-  
-  
+  <!-- Add Navbar -->
+  <!-- Sections -->
+  <!-- Intro/ Home -->
+  <!-- Portfolio -->
+  <!-- About me -->
+  <!-- Get in touch -->
+  <!-- Interactive section -->
+
+
+  <!-- Portfolio Section - Series of Thumbnails with a Sub-heading for Frontend/ Backend and a 2-3 line description -->
+
+  <!-- 
+    Issues to resolve
+    1. A Container div that resizes as per the size of the screen and remains at the center. 
+      1a. It resizes in discrete steps (like Bootstrap's container) and not continuously (like Bootstrap's container-fluid). 
+      1b. It remains at the center of the screen and occupies the complete screen for mobile devices. For larger screen sizes it has a maximum width. This maximum width will correspond to the max width of the other components on the Profile/ Portfolio page.
+    2. Thumbnails inside the container which contain 1. Image 2. Name of project 3. Github Link 4. Link for more info. How do you visualize this?
+    3. The thumbnails will have a fixed width and will stack vertically or horizontally responding to screen size
+    4. The thumbnails will effectively manage the gap around them - between thumbnails and between thumbnail and container - as screen and parent containers resize - How to achieve this?
+  -->
+  <div class="sectionBackground">
+    <div class="sectionHeading">
+      <h3>Navbar</h3>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+
+    <div class="aboutMeContent">
+      <h3> About Me </h3>
+    </div>
+
+  </div>
+
+  <div class="sectionBackground">
+    <div class="sectionHeading">
+      <h3>Portfolio</h3>
+    </div>
+  </div>
+
+  <div class="portfolioContainer">
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+      <p></p>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+    <div class="passportImage">
+      <p> Image </p>
+      <p> Project Name/ Brief </p>
+      <button>Project Description</button>
+      <button>Github</button>
+    </div>
+
+  </div>
+
 </body>
 
+<style>
+  .aboutMeContent {
+    max-width: 680px;
+    margin: auto;
+    padding: 2px;
+    padding-left: 10px;
+  }
+  
+  .sectionHeading {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    max-width: 680px;
+    padding: 2px;
+    padding-left: 10px;
+  }
+  
+  .sectionBackground {
+    background-color: #999;
+  }
+  
+  .portfolioContainer {
+    max-width: 680px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .passportImage {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+  }
+</style>
